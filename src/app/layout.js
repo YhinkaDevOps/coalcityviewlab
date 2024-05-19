@@ -10,9 +10,9 @@ import Footnote from "@/components/Footnote";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Lamb of God Motors Limited",
+  title: "Coal City View Medical Laboratory",
   description:
-    "Welcome to Lamb of God Motors, your premier inter-state transport division",
+    "Coal City View Medical Laboratory offers comprehensive and accurate diagnostic testing services. Committed to quality and precision, we provide reliable lab results to support your healthcare needs.",
   icons: {
     icon: ["/favico?v=4"],
     apple: ["/apple-touch-icon?v=4"],
