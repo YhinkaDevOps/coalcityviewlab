@@ -15,26 +15,40 @@ const Navbar = () => {
           <Link href="/">
             <button className="hover:opacity-70 flex items-center flex-shrink-0">
               <img
-                src="/assets/nav-logo.png"
+                src="/assets/microscope.jpeg"
                 className="h-[40px] md:h-[65px]"
                 alt="Navigation_logo"
               />
+              <div className="nav-text flex flex-col font-bold ">
+                <span className="text-sm md:text-base text-start text-[#27a5a9]">
+                  COALCITY{" "}
+                  <span className="text-[#e67817] text-sm md:text-base">
+                    VIEW
+                  </span>
+                </span>
+                <span className="text-[#e67817] text-sm md:text-base">
+                  MEDICAL LABORATORY
+                </span>
+              </div>
             </button>
           </Link>
 
-          <div className="hidden md:block">
+          <div className="hidden md:block nav-text ">
             <ul className="nav-list flex gap-x-9 items-center text-base ">
-              <li className="text-black font-medium hover:text-gray-300">
+              <li className="text-black font-semibold hover:text-[#e67817] ">
                 <Link href="/">Home</Link>
               </li>
-              <li className="text-black font-medium hover:text-gray-300">
+              <li className="text-black font-semibold hover:text-[#e67817]">
                 <Link href="/about">About</Link>
               </li>
-              <li className="text-black font-medium hover:text-gray-300">
-                <Link href="/terminals">Terminals</Link>
+              <li className="text-black font-semibold hover:text-[#e67817]">
+                <Link href="/terminals">Our Services</Link>
               </li>
-              <li className="text-black font-medium hover:text-gray-300">
-                <Link href="/contact-us">Contact Us</Link>
+              <li className="text-black font-semibold hover:text-[#e67817]">
+                <Link href="/contact-us">Contact</Link>
+              </li>
+              <li className="text-white font-medium text-sm hover:opacity-70 bg-[#4175fc] rounded-l-[100px] rounded-r-[100px] px-8 py-3">
+                <Link href="/contact-us">Book a Test</Link>
               </li>
             </ul>
           </div>
