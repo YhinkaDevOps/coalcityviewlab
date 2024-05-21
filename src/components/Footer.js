@@ -33,7 +33,7 @@ const Footer = () => {
           {/* <span className="text-sm">
             https://chimkasimmatransportservices.vercel.app/
           </span> */}
-          <Link href="/pathology-servives">
+          <Link href="/pathology-services">
             <button className="hover:opacity-70 text-sm flex items-center flex-shrink-0 hover:underline">
               Pathology Services
             </button>
@@ -62,7 +62,7 @@ const Footer = () => {
             medical laboratory, consultative, and referral services, we provide
             the most comprehensive array of tests available in Nigeria today,
             encompassing routine, specialized, and advanced tests for clinical,
-            research, and screening purposes. 
+            research, and screening purposes.
           </p>
 
           {/* <Link href="#">
