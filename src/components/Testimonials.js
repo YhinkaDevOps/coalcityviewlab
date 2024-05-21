@@ -1,65 +1,34 @@
 "use client";
-import React, { useRef, useState } from "react";
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
+import Link from "next/link";
+import Image from "next/image";
 
 const Testimonials = () => {
   return (
-    <div className="w-full min-h-[500px] py-10 bg-[#f4f5f7] text-black ">
-      <div className="text-center mb-10">
-        <p className="text-4xl text-[#71717a] mt-3">
-          What our customers say about us
+    <div className="w-full md:min-h-[350px] md:py-10  text-black relative">
+      <div className="hidden md:block absolute bottom-0">
+        <Image
+          className="choose-image"
+          src="/assets/lab-icon.png" // Path to the image in the `public` directory
+          alt="about-bg"
+          width={200}
+          height={400}
+        />
+      </div>
+      <div className="text-center flex flex-col gap-4 mb-10">
+        <p className="mt-3 font-bold text-[#5eed2f]">BE SURE TO</p>
+        <p className="text-4xl md:text-5xl  font-bold">Stay Healthy Always.</p>
+        <p className="text-center text-[#71717a]">
+          All diagnostic tests are conducted in our laboratory, supported by an
+          established Quality System
         </p>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mx-auto max-w-[1100px] p-2 ">
-        <div className="testimonial-bg shadow-lg group container rounded-md flex justify-center items-center mx-auto p-4">
-          <div>
-            <p className="text-justify text-white">
-              "As a frequent traveler, I've experienced various transportation
-              services, but Chimkasimma Transport Services stands out. Their
-              commitment to customer satisfaction is evident in the
-              well-maintained vehicles, friendly drivers, and efficient booking
-              system. Whether it's a short intra-state trip or a long
-              inter-state journey, Chimkasimma consistently delivers quality
-              service.
-            </p>
-            <p className="mt-4 text-center font-semibold text-white">
-              Emeka Madueke
-            </p>
-          </div>
-        </div>
-        <div className="testimonial-bg shadow-lg  group container rounded-md flex justify-center items-center mx-auto p-4">
-          <div>
-            <p className="text-justify text-white">
-              "As a frequent traveler between Warri and Benin City, I rely on
-              Lamb of God Motors for their efficient and punctual services.
-              Their dedication to quality and their use of technology make
-              booking and traveling with them a breeze. I trust Lamb of God
-              Motors for a smooth and enjoyable travel experience every time."
-            </p>
-            <p className="mt-4 text-center font-semibold text-white">
-              Abiodun Animashaun
-            </p>
-          </div>
-        </div>
-        <div className="testimonial-bg shadow-lg  group container rounded-md flex justify-center items-center mx-auto p-4">
-          <div>
-            <p className="text-justify text-white">
-              "Lamb of God Motors has been my go-to transport service for
-              inter-state travel in Nigeria. Their commitment to reliability and
-              exceptional customer service is unmatched. I always feel safe and
-              comfortable during my journeys with them. Highly recommended!"
-            </p>
-            <p className="mt-4 text-center font-semibold text-white">
-              Temiloluwa Victoria
-            </p>
-          </div>
-        </div>
+
+      <div className="flex justify-center md:justify-center items-start">
+        <Link href="/contact-us">
+          <button className="text-white font-medium text-sm hover:opacity-70 bg-[#4175fc] rounded-l-[100px] rounded-r-[100px] px-10 py-4">
+            Get Tested
+          </button>
+        </Link>
       </div>
     </div>
   );

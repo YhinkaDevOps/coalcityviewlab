@@ -34,8 +34,37 @@ const Contact = () => {
           /<span className="font-semibold">Contact Us</span>
         </span>
       </div>
+      <div className="w-full min-h-[300px] py-12 bg-[#f4f5f7] text-black px-4 md:px-0 nav-text">
+        <div className="text-center mb-10">
+          <p className="text-4xl font-bold text-black">Get In Touch With us</p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mx-auto max-w-[1100px] p-2 ">
+          <div className="flex flex-col gap-3 items-center md:border-r-[1px] md:border-r-zinc-700">
+            <p className="text-[#e67817] font-bold text-lg">CALL US</p>
+            <p className="font-bold text-3xl">Make a Call</p>
+            <p className="text-[#333333]">+234-80336-57445</p>
+          </div>
+          <div className="flex flex-col gap-3 items-center md:border-r-[1px] md:border-r-zinc-700">
+            <div className="flex flex-col gap-3 items-center">
+              <p className="text-[#e67817] font-bold text-lg">LOCATE US</p>
+              <p className="font-bold text-3xl">Our Location</p>
+              <p className="text-[#333333]">
+                95/129 Okota Road, Atinuke Complex, Lagos
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-col gap-3 items-center ">
+            <div className="flex flex-col gap-3 items-center">
+              <p className="text-[#e67817] font-bold text-lg">EMAIL US</p>
+              <p className="font-bold text-3xl">Send a Message</p>
+              <p className="text-[#333333]">coalcityview@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
       {/* Contact Container */}
-      <div className="mx-auto max-w-[1099px] my-10 px-4 md:px-0 w-full grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-4">
+      <div className="mx-auto max-w-[800px] my-10 px-4 md:px-0 w-full gap-6 md:gap-4">
         <div className="contact-form border shadow-lg shadow-[rgb(4,12,22)] container rounded-md p-7 order-last">
           <form onSubmit={handleSubmit} className="flex flex-col">
             <div className="input-group mb-7">
@@ -74,28 +103,7 @@ const Contact = () => {
             {/* <ToastContainer /> */}
           </form>
         </div>
-        <div className="contact-form border shadow-lg shadow-[rgb(4,12,22)] flex flex-col gap-2 p-7">
-          <h3 className="text-[#000000] text-2xl font-semibold">SAY HELLO</h3>
-          <h3 className="text-[#000000] text-2xl font-semibold">CONTACT US</h3>
-          <h3 className="text-[#000000] text-2xl font-semibold">
-            ANYTIME YOU NEED OUR SERVICES
-          </h3>
-          <h3 className="text-[#000000]] text-2xl font-semibold">Phone Us:</h3>
-          <div>
-            <p>Customer Service:</p>
-            <p>08027200405</p>
-            <p>07035356518</p>
-            <p>08185769804</p>
-            <p>07060658643</p>
-            <p>08132666710</p>
-            <p>09030883728</p>
-          </div>
-
-          <h3 className="text-[#000000] text-2xl font-semibold">Email Us</h3>
-          <div>
-            <p>lambofgodmotors.limited@gmail.com</p>
-          </div>
-        </div>
+ 
       </div>
     </div>
   );

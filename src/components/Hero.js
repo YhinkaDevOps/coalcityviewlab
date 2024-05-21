@@ -133,7 +133,7 @@ const Hero = () => {
                 </p>
 
                 <div className="flex justify-center md:justify-start items-start">
-                  <Link href="/contact-us">
+                  <Link href="/about">
                     <button className="text-white font-medium text-sm hover:opacity-70 bg-[#4175fc] rounded-l-[100px] rounded-r-[100px] px-16 py-5">
                       Learn More
                     </button>

@@ -159,28 +159,25 @@ select {
 }
 
 .about-bg {
-  background: rgb(15, 33, 122);
-  background: radial-gradient(
-    circle,
-    rgba(15, 33, 122, 1) 0%,
-    rgba(4, 8, 28, 1) 75%
-  );
+   background-image: url("https://autima.com.au/wp-content/uploads/2023/07/14-1-1-768x401.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .about-box {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-/* .abd {
-  background-image: url(../../public/assets/about-yk.png);
+.abd {
+  background-image: url("http://www.melstalabs.com/images/listingimage/biochemistry-listimg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   height: auto;
-    filter: blur(8px);
-  -webkit-filter: blur(2px);
-} */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+}
 
 .core-values{
   box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 2px 0px, rgba(0, 0, 0, 0.125) 0px -1px 1px 0px;
@@ -209,5 +206,18 @@ box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 
 .gallery-image{
   width: 100%;
   aspect-ratio: 0.5;
+  object-fit: cover;
+}
+
+.pathology-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://purelifepharmacy.ng/wp-content/uploads/2022/10/hand-with-protective-gloves-holding-blood-samples-covid-test-1024x683.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.card-image_ {
+  width: 100%;
+  aspect-ratio: 1.5;
   object-fit: cover;
 }

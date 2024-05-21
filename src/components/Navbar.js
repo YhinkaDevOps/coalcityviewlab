@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Menu, MenuButton, MenuList, MenuItem, Button } from "@chakra-ui/react";
 
 const Navbar = () => {
   const [isClick, setisClick] = useState(false);
@@ -41,14 +42,31 @@ const Navbar = () => {
               <li className="text-black font-semibold hover:text-[#e67817]">
                 <Link href="/about">About</Link>
               </li>
-              <li className="text-black font-semibold hover:text-[#e67817]">
-                <Link href="/terminals">Our Services</Link>
-              </li>
-              <li className="text-black font-semibold hover:text-[#e67817]">
+
+              <Menu>
+                <MenuButton className="text-black font-semibold hover:text-[#e67817]">
+                  Services
+                </MenuButton>
+                <MenuList className="">
+                  <Link href="/pathology-services">
+                    {" "}
+                    <MenuItem>Pathology Services</MenuItem>
+                  </Link>
+                  <Link href="/customer-services">
+                    {" "}
+                    <MenuItem>Customer Services</MenuItem>
+                  </Link>
+                  <Link href="/screening-tests">
+                    {" "}
+                    <MenuItem>Screening Tests</MenuItem>
+                  </Link>
+                </MenuList>
+              </Menu>
+              {/* <li className="text-black font-semibold hover:text-[#e67817]">
                 <Link href="/contact-us">Contact</Link>
-              </li>
-              <li className="text-white font-medium text-sm hover:opacity-70 bg-[#4175fc] rounded-l-[100px] rounded-r-[100px] px-8 py-3">
-                <Link href="/contact-us">Book a Test</Link>
+              </li> */}
+              <li className="text-white font-semibold text-sm hover:opacity-70 bg-[#4175fc] rounded-l-[100px] rounded-r-[100px] px-8 py-3">
+                <Link href="/contact-us">Appointment</Link>
               </li>
             </ul>
           </div>
@@ -66,16 +84,34 @@ const Navbar = () => {
           <div className="nav-bg md:hidden">
             <div className="px-2 pt-2 pb-2 space-y-1 sm:px-3">
               <ul className="list-none space-y-2">
-                <li className="text-white hover:bg-white font-medium hover:text-black rounded-lg p-2">
+                <li className="text-center text-white hover:bg-white font-medium hover:text-black rounded-lg p-2">
                   <Link href="/">Home</Link>
                 </li>
-                <li className="text-white hover:bg-white font-medium hover:text-black rounded-lg p-2">
+                <li className="text-center text-white hover:bg-white font-medium hover:text-black rounded-lg p-2">
                   <Link href="/about">About</Link>
                 </li>
-                <li className="text-white hover:bg-white font-medium hover:text-black rounded-lg p-2">
-                  <Link href="/terminals">Terminals</Link>
+                <li className="text-center text-white hover:bg-white font-medium hover:text-black rounded-lg p-2">
+                  <Menu>
+                    <MenuButton className="w-full hover:text-black block ">
+                      Services
+                    </MenuButton>
+                    <MenuList className="">
+                      <Link href="/pathology-services">
+                        {" "}
+                        <MenuItem>Pathology Services</MenuItem>
+                      </Link>
+                      <Link href="/customer-services">
+                        {" "}
+                        <MenuItem>Customer Services</MenuItem>
+                      </Link>
+                      <Link href="/screening-tests">
+                        {" "}
+                        <MenuItem>Screening Tests</MenuItem>
+                      </Link>
+                    </MenuList>
+                  </Menu>
                 </li>
-                <li className="text-white hover:bg-white font-medium hover:text-black rounded-lg p-2">
+                <li className="text-center text-white hover:bg-white font-medium hover:text-black rounded-lg p-2">
                   <Link href="/contact-us">Contact Us</Link>
                 </li>
               </ul>

@@ -34,7 +34,7 @@ const About = () => {
               </p>
 
               <div className="flex justify-center md:justify-start items-start">
-                <Link href="/contact-us">
+                <Link href="/pathology-services">
                   <button className="text-white font-medium text-sm hover:opacity-70 bg-[#4175fc] rounded-l-[100px] rounded-r-[100px] px-10 py-4">
                     Learn More
                   </button>
@@ -61,7 +61,7 @@ const About = () => {
               </p>
 
               <div className="flex justify-center md:justify-start items-start">
-                <Link href="/contact-us">
+                <Link href="/customer-services">
                   <button className="text-white font-medium text-sm hover:opacity-70 bg-[#4175fc] rounded-l-[100px] rounded-r-[100px] px-10 py-4">
                     Learn More
                   </button>
@@ -89,7 +89,7 @@ const About = () => {
               </p>
 
               <div className="flex justify-center md:justify-start items-start">
-                <Link href="/contact-us">
+                <Link href="/screening-tests">
                   <button className="text-white font-medium text-sm hover:opacity-70 bg-[#4175fc] rounded-l-[100px] rounded-r-[100px] px-10 py-4">
                     Learn More
                   </button>
