@@ -81,29 +81,13 @@ font-family: "Amazing Kids", sans-serif;
 } */
 
 /* Terminals style */
-.aba-bg {
-  background-image: url("../../public/assets/aba.jpeg");
-  background-size: cover;
-  background-position: center;
-}
 
-.festac-bg {
-  background-image: url("../../public/assets/festac.jpg");
-  background-size: cover;
-  background-position: center;
-}
 
-.abuja-bg {
-  background-image: url("../../public/assets/abuja.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.enugu-bg {
+/* .enugu-bg {
   background-image: url("../../public/assets/enugu.jpg");
   background-size: cover;
   background-position: center;
-}
+} */
 
 .content-div {
   background-repeat: no-repeat;
@@ -129,27 +113,7 @@ width: 100vw;
   height: auto; 
 }
 
-/* .swiper-slide {
-  border-radius: 0.375rem;
-} */
 
-/* .swiper-slide img {
-  width: 100%;
-  aspect-ratio: 3/2;
-  object-fit: cover;
-} */
-
-/* Our Destination style */
-.swiper-zoom-container img {
-  width: 100%;
-  aspect-ratio: 3/2;
-  object-fit: cover;
-}
-
-.mySwiper_destination {
-  width: 100%;
-  height: 50%;
-}
 
 .about-image {
   width: 100%;
@@ -207,16 +171,16 @@ select {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.abd {
+/* .abd {
   background-image: url(../../public/assets/about-yk.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   height: auto;
-    /* filter: blur(8px);
-  -webkit-filter: blur(2px); */
-}
+    filter: blur(8px);
+  -webkit-filter: blur(2px);
+} */
 
 .core-values{
   box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 2px 0px, rgba(0, 0, 0, 0.125) 0px -1px 1px 0px;
@@ -235,5 +199,15 @@ box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 
   display: block;
   width: 100wv;
   height: 100%;
+  object-fit: cover;
+}
+
+.service-bg{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+.gallery-image{
+  width: 100%;
+  aspect-ratio: 0.5;
   object-fit: cover;
 }

@@ -51,7 +51,7 @@ const Hero = () => {
                 <div className="flex justify-center md:justify-start items-start">
                   <Link href="/contact-us">
                     <button className="text-white font-medium text-sm hover:opacity-70 bg-[#4175fc] rounded-l-[100px] rounded-r-[100px] px-16 py-5">
-                      Book a Test
+                      Book Appointment
                     </button>
                   </Link>
                 </div>
@@ -92,7 +92,7 @@ const Hero = () => {
                 <div className="flex justify-center md:justify-start items-start">
                   <Link href="/contact-us">
                     <button className="text-white font-medium text-sm hover:opacity-70 bg-[#4175fc] rounded-l-[100px] rounded-r-[100px] px-16 py-5">
-                      Book a Test
+                      Book Appointment
                     </button>
                   </Link>
                 </div>
@@ -117,7 +117,7 @@ const Hero = () => {
             </div>
           </SwiperSlide>
 
-          <SwiperSlide className="min-h-[510px]">
+          <SwiperSlide className="min-h-[500px]">
             <div className="flex md:flex-row flex-col pt-80 md:pt-12 gap-10  md:px-10">
               <div className="basis-1/2 flex flex-col space-y-6 md:space-y-5 text-black">
                 <h4 className="text-3xl md:text-5xl text-black text-start">

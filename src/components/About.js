@@ -1,41 +1,102 @@
 import React from "react";
+import Link from "next/link";
+import microscope from "../../public/assets/microscope.gif";
+import samples from "../../public/assets/samples.gif";
+import helpdesk from "../../public/assets/helpdesk.gif";
 // import styles from './about.module.css'
 import Image from "next/image";
 
 const About = () => {
   return (
-    <div className="w-full min-h-screen py-16 bg-[#f4f5f7] text-black">
-      <div className="mx-auto max-w-[1100px] w-full grid sm:grid-cols-2 gap-8 px-4">
-        <div className="text-center shadow-md rounded-tl-[150px] rounded-tr-[50px]">
-          <img
-            className="about-image"
-            src="/assets/about-bg.jpg" // Path to the image in the `public` directory
-            alt="about-bg"
-          />
-        </div>
-        <div className="flex flex-col gap-2 p-4 text-justify">
-          <p className="animate__animated animate__zoomIn">
-            Welcome to Lamb of God Motors, a distinguished Nigerian inter-state
-            transport division that stands as a premier provider of road
-            transport solutions for individuals spanning Lagos, Warri, Benin
-            City, and Onitsha.
-          </p>
-          <p className="animate__animated animate__zoomIn">
-            Our unwavering commitment lies in delivering dependable mobility
-            services to commuters nationwide. At the heart of our operations is
-            a dynamic and diverse workforce, led by a team of seasoned
-            professionals with extensive expertise across various industries.
-          </p>
-          <p className="animate__animated animate__zoomIn">
-            With an expanding operational footprint, bolstered by a robust fleet
-            and a steadfast dedication to exceptional customer service, Lamb of
-            God Motors is at the forefront of the industry. We harness
-            technology to optimize our operations and ensure efficiency,
-            allowing us to consistently deliver outstanding services at
-            competitive rates to our valued commuters. Experience the difference
-            with Lamb of God Motors – where reliability, professionalism, and
-            customer satisfaction converge.
-          </p>
+    <div className="w-full min-h-screen py-16 text-black">
+      <div className="mx-auto max-w-[1100px] w-full px-4">
+        <div className="flex flex-col gap-10">
+          <h6 className="font-bold text-center text-[#0f5a64] text-4xl">
+            OUR SERVICES
+          </h6>
+          <div className=" grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div className="bg-[#f7f7f7] flex flex-col gap-5 service-bg p-5">
+              <Image
+                src={microscope}
+                width={50}
+                height={10}
+                alt="lab-image"
+                className="rounded-lg "
+              />
+
+              <h3 className="font-bold text-[#0f5a64] text-lg">
+                Pathology Services
+              </h3>
+              <p className="text-[#0f5a64]">
+                Our pathology service leads the way in diagnostic excellence,
+                offering unmatched insights into the complexities of health and
+                disease.
+              </p>
+
+              <div className="flex justify-center md:justify-start items-start">
+                <Link href="/contact-us">
+                  <button className="text-white font-medium text-sm hover:opacity-70 bg-[#4175fc] rounded-l-[100px] rounded-r-[100px] px-10 py-4">
+                    Learn More
+                  </button>
+                </Link>
+              </div>
+            </div>
+
+            <div className="bg-[#f7f7f7] flex flex-col gap-5 service-bg p-5">
+              <Image
+                src={helpdesk}
+                width={50}
+                height={10}
+                alt="helpdesk-image"
+                className="rounded-lg "
+              />
+
+              <h3 className="font-bold text-[#0f5a64] text-lg">
+                Customer Services
+              </h3>
+              <p className="text-[#0f5a64]">
+                Our dedicated customer service team is here to assist you with
+                all your needs, ensuring a seamless and supportive experience
+                from appointment scheduling to test results.
+              </p>
+
+              <div className="flex justify-center md:justify-start items-start">
+                <Link href="/contact-us">
+                  <button className="text-white font-medium text-sm hover:opacity-70 bg-[#4175fc] rounded-l-[100px] rounded-r-[100px] px-10 py-4">
+                    Learn More
+                  </button>
+                </Link>
+              </div>
+            </div>
+
+            <div className="bg-[#f7f7f7] flex flex-col gap-5 service-bg p-5">
+              <Image
+                src={samples}
+                width={50}
+                height={10}
+                alt="lab-image"
+                className="rounded-lg "
+              />
+
+              <h3 className="font-bold text-[#0f5a64] text-lg">
+                Screening Tests
+              </h3>
+              <p className="text-[#0f5a64]">
+                Ensure your health with our comprehensive screening tests. Early
+                detection is key, and our advanced diagnostics provide accurate
+                and timely results to help you stay proactive about your
+                well-being
+              </p>
+
+              <div className="flex justify-center md:justify-start items-start">
+                <Link href="/contact-us">
+                  <button className="text-white font-medium text-sm hover:opacity-70 bg-[#4175fc] rounded-l-[100px] rounded-r-[100px] px-10 py-4">
+                    Learn More
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
