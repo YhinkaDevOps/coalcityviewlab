@@ -100,7 +100,7 @@ const Hero = () => {
               <div className="basis-1/2 hidden md:block">
                 <Image
                   src={labimagetwo}
-                  width={500}
+                  width={400}
                   height={10}
                   alt="lab-image"
                   className="rounded-lg "
